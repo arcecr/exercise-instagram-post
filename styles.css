@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.post {
+    width: 540px;
+    height: 742px;
+    margin: 20px 0 20px 0;
+}
+
+.post > .post-header {
+    background-color: #ffffff;
+    height: 73px;
+    padding: 14px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 3px 3px 0 0;
+}
+
+.post > .post-header > .user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post > .post-header > .user-info > .avatar {
+    max-width: 45px;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.post > .post-header > .user-info > .name {
+    display: flex;
+    flex-flow: column
+}
+
+.post > .post-header > .user-info > .name span:first-child {
+    font-weight: bold;
+}
+
+.post > .post-content > img {
+    vertical-align: middle;
+} 
+
+.post > .post-actions {
+    background: white;
+    height: 69px;
+    padding: 14px;
+    font-size: 22px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post > .post-actions > .reactions i {
+    padding-right: 6px;
+}
+
+.post > .post-description {
+    background: white;
+    height: 194px;
+    padding: 0px 14px 14px 14px;
+    border-radius: 0 0 3px 3px;
+}
+
+.post > .post-description p:last-child {
+    padding-top: 25px;
+}
